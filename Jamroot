@@ -1,0 +1,6 @@
+
+use-project boost : ../../boost/boost ;
+
+exe main : main.cpp : <cxxflags>-std=c++20 <include>. <include>include <include>../compile-time-regular-expressions/include <threading>multi ;
+
+stage stage : main ;
